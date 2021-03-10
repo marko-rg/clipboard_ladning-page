@@ -1,0 +1,41 @@
+.btn {
+	
+	&:link,
+	&:visited {
+	display: inline-block;
+	margin: .5rem;
+	text-decoration: none;
+	font-weight: 600;
+	text-align: center;
+	color: $color-white;
+	padding: 1rem 2.5rem;
+	border: 1px solid transparent;
+	border-radius: 2.5rem;
+	outline: none;
+	transition: all .2s;
+	@media only screen and (max-width: $bp-mobile) {
+		display: block;
+		min-width: 100%;
+		margin-bottom: 2rem;
+	}
+	}
+
+	&:hover {
+		opacity: .85;
+		transform: translateY(-2px);
+	}
+
+	&:active {
+		transform: translateY(0);
+	}
+
+	&-green {
+		background-color: $btn-green;
+		box-shadow: 0 .5rem 2rem rgba($btn-green, .5);
+	}
+
+	&-purple {
+		background-color: $btn-purple;
+		box-shadow: 0 .5rem 2rem rgba($btn-purple, .5);
+	}
+}
